@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ButtonText</key>
+	<string>Hello All</string>
+	<key>ButtonTextColor</key>
+	<string>#ffffff</string>
+	<key>discount</key>
+	<integer>8</integer>
+	<key>price</key>
+	<integer>67</integer>
+	<key>is_promotion_on</key>
+	<true/>
+	<key>ButtonColor</key>
+	<string>#000000</string>
+</dict>
+</plist>

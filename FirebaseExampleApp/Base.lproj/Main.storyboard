@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A238m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="par-Fg-b2c">
+                                <rect key="frame" x="30" y="285" width="540" height="30"/>
+                                <state key="normal" title="Huge amounts to text to write"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9I-L9-9y6">
+                                <rect key="frame" x="20" y="356" width="560" height="30"/>
+                                <state key="normal" title="Reload Data"/>
+                                <connections>
+                                    <action selector="btnReloadData_Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ygc-DC-q93"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="par-Fg-b2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qB-Hz-ho0"/>
+                            <constraint firstItem="G9I-L9-9y6" firstAttribute="top" secondItem="par-Fg-b2c" secondAttribute="bottom" constant="41" id="FJg-lM-dFQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G9I-L9-9y6" secondAttribute="trailing" id="GPz-Db-Cbc"/>
+                            <constraint firstItem="G9I-L9-9y6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HPQ-Oh-2yu"/>
+                            <constraint firstItem="par-Fg-b2c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aRe-3a-XaL"/>
+                            <constraint firstItem="par-Fg-b2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="g3a-Jr-sWq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="par-Fg-b2c" secondAttribute="trailing" constant="10" id="ijB-6w-Vbz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRandomButton" destination="par-Fg-b2c" id="Zg7-PO-Lsh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="277"/>
+        </scene>
+    </scenes>
+</document>
